@@ -76,3 +76,58 @@ Kurz gesagt: JSX lässt dich Photoshop per Code steuern, um effizienter, schnell
 
      alert("Skript erfolgreich ausgeführt!");
    }
+
+
+## Erklärung des Grundgerüsts
+
+- `app.documents.length === 0`  
+  Prüft, ob überhaupt ein Dokument geöffnet ist.  
+
+- `app.activeDocument`  
+  Referenziert das aktuell aktive Dokument in Photoshop.  
+
+- `backgroundLayer.isBackgroundLayer = false`  
+  Hebt die Sperre der Hintergrundebene auf, damit sie wie jede andere Ebene bearbeitet werden kann.  
+
+- `doc.artLayers.add()`  
+  Erstellt eine neue Ebene im aktuellen Dokument.  
+
+- `doc.selection.select([...])` & `fill(...)`  
+  Definiert eine Auswahl anhand eines Koordinaten-Arrays und füllt sie mit der aktuellen Vordergrundfarbe.  
+
+- `alert(...)`  
+  Zeigt eine Info-Box im Photoshop-Dialog an.  
+
+---
+
+## Skript ausführen in Photoshop
+
+1. Öffne Photoshop und lade ein beliebiges Bild (oder erstelle ein neues Dokument).  
+2. Gehe zu **Datei → Skripten → Durchsuchen…**  
+3. Wähle deine `.jsx`-Datei (z. B. `meinErstesSkript.jsx`) aus und klicke **Öffnen**.  
+4. Photoshop führt das Skript sofort aus und zeigt ggf. Alerts an.  
+
+> **Herzlichen Glückwunsch!**  
+> Du hast dein erstes JSX-Skript erfolgreich erstellt und ausgeführt.  
+
+---
+
+## Ausblick & weiterführende Ideen
+
+- Lege im Ordner `scripts/` weitere `.jsx`-Dateien für Routine-Aufgaben an.  
+- Verknüpfe mehrere Aktionen zu einem einzigen Klick-Workflow.  
+- Erstelle eigene Dialogfenster (Panels) mit ExtendScript UI-Elementen.  
+- Teile deine Skripte im Team oder veröffentliche sie auf GitHub.  
+
+> **Tipp:** Feedback, Fragen oder Ideen?  
+> Schreib mir gerne eine Nachricht unter **Sag Hallo**!  
+
+---
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT License](LICENSE).
+
+© 2025 Bitter. Lern Einfach– Authentisch. 
+Automatisiere deine Photoshop-Workflows effizient und kreativ!
+
